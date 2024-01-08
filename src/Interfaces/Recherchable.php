@@ -1,9 +1,5 @@
 <?php
 
-namespace App\Interfaces;
-
-interface Recherchable
-{
+interface Recherchable {
     // Code
-    public function getPage();
 }
