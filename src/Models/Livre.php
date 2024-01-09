@@ -1,5 +1,8 @@
 <?php
 
-class Livre extends ItemBibliotheque {
-    // Code
+namespace App\Models;
+
+use App\Abstract\ItemBibliotheque;
+
+class Livre extends ItemBibliotheque{
 }

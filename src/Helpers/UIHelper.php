@@ -17,10 +17,10 @@ class UIHelper {
         echo "\033[0m"; // Réinitialiser le style
 
         foreach ($livres as $livre) {
-            echo str_pad($livre->getTitre(), 40);
-            echo str_pad($livre->getAuteur(), 30);
-            echo str_pad($livre->getAnneePublication(), 10);
-            $domaine = ($livre instanceof LivreSpecialise) ? $livre->getDomaine() : "Sans domaine";
+            echo str_pad($livre->titre, 40);
+            echo str_pad($livre->auteur, 30);
+            echo str_pad($livre->anneePublication, 10);
+            $domaine = ($livre instanceof LivreSpecialise) ? $livre->domaine : "Sans domaine";
             echo str_pad($domaine, 20);
             echo "\n";
         }
